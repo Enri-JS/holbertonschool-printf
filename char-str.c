@@ -19,3 +19,16 @@ int op_string(va_list s)
 
 	return (i);
 }
+
+/**
+ * op_char - prints a character
+ * return: 1, returns a character
+ */
+
+int op_char(va_list c)
+{
+	char x = (char) va_arg(c, int);
+	_putchar (x);
+
+	return (1);
+}
