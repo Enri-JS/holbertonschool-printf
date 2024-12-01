@@ -11,6 +11,7 @@
 int op_number(va_list i)
 {
 	int n = va_arg(i, int);
+	int x = 1;
 	unsigned int var;
 	int len = 0;
 
@@ -30,8 +31,6 @@ int op_number(va_list i)
 		_putchar('\0');
 		return (1);
 	}
-
-	int x = 1;
 
 	while (var / x >= 10)
 		x *= 10;

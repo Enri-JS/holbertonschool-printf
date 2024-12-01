@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+#include <stdarg.h>
 
 /**
  * struct op_match - provides the input the correct function
@@ -21,6 +22,7 @@ int (*func)(va_list);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int (*op_select(const char *next, int var))(va_list);
+int op_number(va_list d);
 int op_char(va_list c);
 int op_string(va_list s);
 int op_unsigned(va_list i);
