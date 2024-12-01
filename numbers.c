@@ -10,29 +10,37 @@
 
 int op_number(va_list i)
 {
-	int n, x = 1, len = 0;
-
+	int n = va_arg(i, int);
 	unsigned int var;
-
-	n = va_arg(i, int);
+	int len = 0;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		var = n * -1;
+		var = -n;
 		len++;
 	}
 	else
+	{
 		var = n;
+	}
 
-	while (var / x > 9)
-		x = x * 10;
+	if (var == 0)
+	{
+		_putchar('\0');
+		return (1);
+	}
+
+	int x = 1;
+
+	while (var / x >= 10)
+		x *= 10;
 
 	while (x)
 	{
-		len = len + _putchar(var / x + '0');
-		var = var % x;
-		x = x / 10;
+		len += _putchar(var / x + '\0');
+		var %= x;
+		x /= 10;
 	}
 	return (len);
 }
