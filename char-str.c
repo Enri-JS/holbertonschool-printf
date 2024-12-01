@@ -9,12 +9,11 @@
 int op_string(va_list s)
 {
 	char *str;
-
-	int i;
+	int i = 0;
 
 	str = va_arg(s, char *);
-	if (*str == '\0')
 
+	if (*str == '\0')
 		str = "(null)";
 
 	for (i = 0; str[i] != '\0'; i++)
