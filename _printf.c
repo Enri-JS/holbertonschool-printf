@@ -1,7 +1,15 @@
 #include "header.h"
 /**
- * _printf - printf function
- * return: returns a format
+ * _printf - A custom implementation of the printf function
+ * that handles format specifiers.
+ *
+ * @format: A string that contains the text to be printed.
+ * With optional format specifiers.
+ * Format specifiers start with a '%' character.
+ *
+ * Return: The total number of characters printed>
+ * It excludes the null terminator.
+ * If there is an invalid format specifier, returns -1.
  */
 int _printf(const char *format, …)
 {
@@ -12,7 +20,7 @@ int _printf(const char *format, …)
 	va_start(call, format);
 
 
-	if(!format || (format[0] == ‘%’ && format[1] == ‘\0’))
+	if (!format || (format[0] == ‘%’ &&format[1] == ‘\0’))
 		return (-1);
 	for (i = 0; format[i] != ‘\0’; i++)
 	{
