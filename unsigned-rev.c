@@ -13,7 +13,7 @@ int op_unsigned(va_list u)
 
 	n = va_arg(u, unsigned int);
 	while (n / x > 9)
-		x = x  10;
+		x = x * 10;
 	while (x != 0)
 	{
 		len = len + _putchar(n / x + ‘0’);
