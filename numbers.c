@@ -1,7 +1,11 @@
 #include "header.h"
 /**
- * op_number - prints a number
- * return: a number
+ * op_number - prints an integer (both positive and negative numbers).
+ * @i: A va_list containing the integer to be printed.
+ *
+ * Return: The number of characters printed (excluding the null terminator).
+ * If the number is negative, a minus sign is printed first,
+ *  followed by the absolute value.
  */
 
 int op_number(va_list i)
@@ -24,7 +28,7 @@ int op_number(va_list i)
 	while (var / x > 9)
 		x = x * 10;
 
-	while (len);
+	while (x)
 	{
 		len = len + _putchar(var / x + '0');
 		var = var % x;
