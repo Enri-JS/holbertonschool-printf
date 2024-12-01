@@ -20,8 +20,12 @@ int (*op_select(const char *next, int var))(va_list)
 		{"r", op_reverse},
 		{NULL, NULL},
 	};
-	for (i = 0; ops[i].match; i++)
+
+	for (i = 0; ops[i].match != NULL; i++)
+	{
 		if (ops[i].match[0] == next[var])
 			return (ops[i].func);
+	}
 
 	return (NULL);
+}
