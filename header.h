@@ -7,6 +7,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdarg.h>
+#include <limits.h>
 
 /**
  * struct op_match - provides the input the correct function
