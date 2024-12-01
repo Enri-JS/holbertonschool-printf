@@ -16,7 +16,7 @@ int op_unsigned(va_list u)
 		x = x * 10;
 	while (x != 0)
 	{
-		len = len + _putchar(n / x + ‘0’);
+		len = len + _putchar(n / x + '0');
 		n = n % x;
 		x = x / 10;
 }
@@ -36,7 +36,7 @@ int op_reverse(va_list r)
 	char *s = va_arg(r, char*);
 
 
-	while (s[i++] != ‘\0’)
+	while (s[i++] != '\0')
 		;
 	Rlen = i;
 	i--;
