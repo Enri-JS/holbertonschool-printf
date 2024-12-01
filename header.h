@@ -1,10 +1,11 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HEADER_H
+#define HEADER_H
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+#include <unistd.h>
 #include <stdarg.h>
 
 /**
@@ -29,4 +30,4 @@ int op_unsigned(va_list i);
 int op_unsigned(va_list u);
 int op_reverse(va_list r);
 
-#endif /* MAIN_H */
+#endif /* HEADER_H */

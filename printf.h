@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef PRINTF_H
+#define PRINTF_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +18,7 @@ char *match;
 int (*func)(va_list);
 } op_t;
 
-int _printf(const char *format, …);
+int _printf(const char *format, ...);
 int _putchar(char c);
 int (*op_select(const char *next, int var))(va_list);
 int op_char(va_list c);
@@ -27,4 +27,4 @@ int op_unsigned(va_list i);
 int op_unsigned(va_list u);
 int op_reverse(va_list r);
 
-#endif /* MAIN_H */
+#endif /* PRINTF_H */
