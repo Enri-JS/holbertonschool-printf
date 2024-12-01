@@ -28,7 +28,7 @@ int op_number(va_list i)
 
 	if (var == 0)
 	{
-		_putchar('\0');
+		_putchar('0');
 		return (1);
 	}
 
@@ -37,7 +37,7 @@ int op_number(va_list i)
 
 	while (x)
 	{
-		len += _putchar(var / x + '\0');
+		len += _putchar(var / x + '0');
 		var %= x;
 		x /= 10;
 	}
