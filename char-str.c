@@ -1,7 +1,10 @@
 #include "header.h"
 /**
- * op_string - prints a string
- * return: i, returns a string
+ * op_string - prints a string to the standard output.
+ * @s: A va_list containing the string to be printed.
+ *
+ * Return: The number of characters printed.
+ * If the string is NULL, it prints "(null)" instead.
  */
 int op_string(va_list s)
 {
@@ -21,13 +24,16 @@ int op_string(va_list s)
 }
 
 /**
- * op_char - prints a character
- * return: 1, returns a character
+ * op_char - prints a single character to the standard output.
+ * @c: A va_list containing the character to be printed.
+ *
+ * Return: Always returns 1, as only one character is printed.
  */
 
 int op_char(va_list c)
 {
 	char x = (char) va_arg(c, int);
+
 	_putchar (x);
 
 	return (1);
