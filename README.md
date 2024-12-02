@@ -6,19 +6,33 @@ Index:
 #shortcut - section
 
 #pf2 - project summary
+
 #pf3 - _printf: Main Function
+
 #pf4 - _printf: Sub-Functions
+
 #pf4.a - %d / %i
+
 #pf4.b - %u
+
 #pf4.c - %o
+
 #pf4.d - %x / %X
+
 #pf4.e - %c
+
 #pf4.f - %s
+
 #pf4.g - %p
+
 #pf4.h - %%
+
 #pf4.i - /n
+
 #pf5 - _printf: Examples
+
 #pf6 - Authors
+
 #pfEND - END
 
 #pf2 - Project Summary
