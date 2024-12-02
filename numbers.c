@@ -1,4 +1,4 @@
-#include "header.h"
+#include "main.h"
 /**
  * op_number - prints an integer (both positive and negative numbers).
  * @i: A va_list containing the integer to be printed.

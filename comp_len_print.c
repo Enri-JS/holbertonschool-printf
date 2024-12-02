@@ -1,4 +1,4 @@
-#include "header.h"
+#include "main.h"
 /**
  * _strcmp - cchecks which string is greater
  * @s1: first string
