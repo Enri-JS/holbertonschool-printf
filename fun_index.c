@@ -18,6 +18,10 @@ int (*op_select(const char *next, int var))(va_list)
 		{"d", op_number},
 		{"u", op_unsigned},
 		{"r", op_reverse},
+		{"o", op_octal},
+		{"x", op_hexL},
+		{"X", op_hexU},
+		{"p", op_pointer},
 		{NULL, NULL},
 	};
 
