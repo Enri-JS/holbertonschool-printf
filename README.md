@@ -1,10 +1,10 @@
---------------------------------------------------
+
 Project "_printf" - README file
 --------------------------------------------------
---------------------------------------------------
 Index:
+--------------------------------------------------
 #shortcut - section
-#pf1 - members
+
 #pf2 - project summary
 #pf3 - _printf: Main Function
 #pf4 - _printf: Sub-Functions
@@ -18,18 +18,11 @@ Index:
 #pf4.h - %%
 #pf4.i - /n
 #pf5 - _printf: Examples
-#pfEND
---------------------------------------------------
-#pf1 - Members:
+#pf6 - Authors
+#pfEND - END
 
- 1- Daniel E De Jesus Sepulveda
-
- 2- Jose Santiago
-
- 3- Willie J Touset Castellar
---------------------------------------------------
 #pf2 - Project Summary
-
+---------------------------------------------------
 This is a custom implemntation of the printf function. It handles format specifiers and formated strings.
 The function can print texts, numbers, or any type of data depending on the format specifier.
 
@@ -39,13 +32,13 @@ It searchers for a format and pritns string depndign on its specifer. format (co
 
 Returns the length of the string, except for the null terminator. If an invalid format is detected it will return -1.
 The function depends on the macros that are provided by the stdarg.h library. Ypu can find va_list, va_start, va_end, and others in this library.
----------------------------------------------------
+
 #pf3 - _printf: Main Function
-
-    The principal purpose of _printf is to print a given string, execute subfunctions when called, insert newlines where ordered, and deliver it all in one neat printed text.
 ---------------------------------------------------
-#pf4 - _printf: Sub-Functions
+    The principal purpose of _printf is to print a given string, execute subfunctions when called, insert newlines where ordered, and deliver it all in one neat printed text.
 
+#pf4 - _printf: Sub-Functions
+---------------------------------------------------
     The secondary function of _printf is to scan through inserted texts for patterns that match any ("%" + Single Character) presets in order to execute the specified type of printing.
 
     Sub-Function Index:
@@ -67,8 +60,9 @@ ranges of hexadecimals, respectively.
     #pf4.h - %% - percent: inserts a single percentage character
 
     #pf4.i - /n - newline: Inserts a new line
-----------------------------------------------------
+
 #pf5 - _printf: Examples
+----------------------------------------------------
 
     1 - _printf("Hello, World!\n");
 
@@ -82,6 +76,15 @@ ranges of hexadecimals, respectively.
 
     output: "The location of 8000003ff in this directory is 0x7ffe637541f0"
 
+#pf6 - Authors
 -----------------------------------------------------
+1 - Daniel E De Jesus Sepulveda - Github: Enri-JS
+
+2 - Jose Santiago - Github: SantiagoJose03
+
+3 - Willie J Touset Castellar - Github: neonbloo25
+
+Repository Link: https://github.com/Enri-JS/holbertonschool-printf
+
 #pfEND - End of Readme
 -----------------------------------------------------
