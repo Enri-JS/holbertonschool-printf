@@ -37,6 +37,6 @@ int print(char *str);
 char *itoa(long int num, int base);
 int op_unsigned(va_list i);
 int op_unsigned(va_list u);
-int op_reverse(va_list r);
+/* int op_reverse(va_list r); */
 
 #endif /* HEADER_H */

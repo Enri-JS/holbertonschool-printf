@@ -17,7 +17,7 @@ int (*op_select(const char *next, int var))(va_list)
 		{"i", op_number},
 		{"d", op_number},
 		{"u", op_unsigned},
-		{"r", op_reverse},
+		/* {"r", op_reverse}, */
 		{"o", op_octal},
 		{"x", op_hexL},
 		{"X", op_hexU},

@@ -29,21 +29,22 @@ return (len);
  *
  * Return: The number of characters printed.
  * Always returns the length of the string (not including the null terminator)
+ *
+ *int op_reverse(va_list r)
+ *{
+ *	int i = 0, Rlen = 0;
+ *	char *s = va_arg(r, char*);
+ *
+ *
+ *	while (s[i++] != '\0')
+ *		;
+ *	Rlen = i;
+ *	i--;
+ *	while (i >= 0)
+ *{
+ *		_putchar(s[i]);
+ *		i--;
+ *}
+ *return (Rlen);
+ *}
  */
-int op_reverse(va_list r)
-{
-	int i = 0, Rlen = 0;
-	char *s = va_arg(r, char*);
-
-
-	while (s[i++] != '\0')
-		;
-	Rlen = i;
-	i--;
-	while (i >= 0)
-{
-		_putchar(s[i]);
-		i--;
-}
-return (Rlen);
-}
